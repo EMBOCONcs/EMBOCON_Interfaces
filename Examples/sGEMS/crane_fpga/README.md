@@ -1,13 +1,13 @@
 Example of linking EMBOCON supervisor interface with a controller running on FPGA
 =================================================================================
 
-*Author*: Andrea Suardi, a.suasu@imperial.ac.uk, Imperial College London 2013
+*Author*: Andrea Suardi, a.suardi@imperial.ac.uk, Imperial College London 2013
 
 ## Requirements for simulation
 
-Matlab R2012a or later with compatible C-compiler.
-Xilinx evaluation board
-FPGA controller implementation integrated
+- Matlab R2012a or later with compatible C-compiler.
+- Xilinx evaluation board
+- FPGA controller implementation integrated
 
 ## Simulation instructions
 

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="C:\Users\asuardi\Desktop\CRANE_Vivado_HLS\final\SDK_FPGA_Software\tmp_hw_platform\system.bit" key="tmp_hw_platform-bitFile"/>
+	<item value="C:\Users\asuardi\Desktop\CRANE_Vivado_HLS\final\SDK_FPGA_Software\tmp_hw_platform\system_bd.bmm" key="tmp_hw_platform-bmmFile"/>
+	<item value="bootloop" key="tmp_hw_platform-microblaze_0-initElf"/>
+</section>

@@ -1,0 +1,6 @@
+13:19:50 **** Auto Build of project controller_server_0_bsp ****
+make -k all 
+'Finished building libraries'
+
+13:19:50 Build Finished (took 211ms)
+

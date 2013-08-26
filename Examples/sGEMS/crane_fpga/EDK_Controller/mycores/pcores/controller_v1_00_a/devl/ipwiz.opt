@@ -1,0 +1,12 @@
+-batch 
+-create controller 
+-ver 1.00.a 
+-dir "C:\Users\asuardi\Desktop\CRANE_Vivado_HLS\EDK" 
+-lang vhdl 
+-bus axi4lite s 
+-rst 
+-reg 4 
+-xps 
+-ise 
+-bfmsim all
+-driver 

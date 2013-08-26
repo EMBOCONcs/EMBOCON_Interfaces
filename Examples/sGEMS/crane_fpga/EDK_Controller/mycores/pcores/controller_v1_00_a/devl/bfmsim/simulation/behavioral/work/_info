@@ -1,0 +1,165 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\asuardi\Desktop\CRANE_Vivado_HLS\EDK\pcores\controller_v1_00_a\devl\bfmsim\simulation\behavioral
+Ebfm_system
+Z1 w1371481350
+Z2 DPx6 unisim 11 vcomponents 0 22 62916OzHX@2hk`I`Z:naL2
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\Users\asuardi\Desktop\CRANE_Vivado_HLS\EDK\pcores\controller_v1_00_a\devl\bfmsim\simulation\behavioral
+Z6 8bfm_system.vhd
+Z7 Fbfm_system.vhd
+l0
+L10
+Z8 V?Em6RazgK2of<8d<0dQKg1
+Z9 OE;C;10.1c;51
+31
+Z10 !s108 1371481454.069000
+Z11 !s90 -reportprogress|300|-novopt|-93|-work|work|bfm_system.vhd|
+Z12 !s107 bfm_system.vhd|
+Z13 o-93 -work work
+Z14 !s100 jOXM:]aJINO<12WbE<LSC1
+!i10b 1
+Astructure
+R2
+R3
+R4
+Z15 DEx4 work 10 bfm_system 0 22 ?Em6RazgK2of<8d<0dQKg1
+l328
+L17
+Z16 Vd>GXVkc7KlhVmcI5@GdDm0
+R9
+31
+R10
+R11
+R12
+R13
+Z17 !s100 RVlJeOOF=b@B?0OnXES5@2
+!i10b 1
+vbfm_system_axi4lite_bus_wrapper
+Z18 Ic>[8;PXII@bQk`jBzBMOl3
+Z19 Vkl213[]gjl`0^H;:T6hk13
+R5
+R1
+Z20 8bfm_system_axi4lite_bus_wrapper.v
+Z21 Fbfm_system_axi4lite_bus_wrapper.v
+L0 9
+Z22 OE;L;10.1c;51
+r1
+31
+Z23 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!i10b 1
+Z24 !s100 eSULBUzgeTVzULczZIDW<2
+!s85 0
+Z25 !s108 1371481452.800000
+Z26 !s107 bfm_system_axi4lite_bus_wrapper.v|
+Z27 !s90 -reportprogress|300|-novopt|-incr|-work|work|bfm_system_axi4lite_bus_wrapper.v|
+vbfm_system_bfm_processor_wrapper
+Z28 IcVb>kh2U3R^7^XNZVaALD3
+Z29 V9>1XPFL=6Af2G28J9dXh^2
+R5
+R1
+Z30 8bfm_system_bfm_processor_wrapper.v
+Z31 Fbfm_system_bfm_processor_wrapper.v
+L0 9
+R22
+r1
+31
+R23
+Z32 !s100 kPdgjLKLJ0aUB_UP[IW1=2
+Z33 !s108 1371481452.436000
+Z34 !s107 bfm_system_bfm_processor_wrapper.v|
+Z35 !s90 -reportprogress|300|-novopt|-incr|-work|work|bfm_system_bfm_processor_wrapper.v|
+!i10b 1
+!s85 0
+Ebfm_system_controller_inst_wrapper
+R1
+R2
+R3
+R4
+R5
+Z36 8bfm_system_controller_inst_wrapper.vhd
+Z37 Fbfm_system_controller_inst_wrapper.vhd
+l0
+L13
+Z38 VoV]]?V4I;FCfVbj_mCYF42
+R9
+31
+Z39 !s108 1371481453.167000
+Z40 !s90 -reportprogress|300|-novopt|-93|-work|work|bfm_system_controller_inst_wrapper.vhd|
+Z41 !s107 bfm_system_controller_inst_wrapper.vhd|
+R13
+Z42 !s100 KIWz6D0@@h?M`oJ2]EJMX1
+!i10b 1
+Astructure
+R2
+R3
+R4
+Z43 DEx4 work 34 bfm_system_controller_inst_wrapper 0 22 oV]]?V4I;FCfVbj_mCYF42
+l77
+L37
+Z44 Vn;3D^IUoQdNYQei^_fXI?3
+R9
+31
+R39
+R40
+R41
+R13
+Z45 !s100 h?U;K9?I:3=7ROYlLObj<2
+!i10b 1
+Ebfm_system_tb
+R1
+R2
+R3
+R4
+R5
+Z46 8bfm_system_tb.vhd
+Z47 Fbfm_system_tb.vhd
+l0
+L17
+Z48 VN=>djbVkj;RaS52eIi7hM3
+R9
+31
+Z49 !s108 1371481454.678000
+Z50 !s90 -reportprogress|300|-novopt|-93|-work|work|bfm_system_tb.vhd|
+Z51 !s107 bfm_system_tb.vhd|
+R13
+Z52 !s100 _??D29<Aci`QI3X7<fD:93
+!i10b 1
+Astructure
+R2
+R3
+R4
+Z53 DEx4 work 13 bfm_system_tb 0 22 N=>djbVkj;RaS52eIi7hM3
+l43
+L20
+Z54 V:5UmCNo7E`a=z[B6=1:;:1
+R9
+31
+R49
+R50
+R51
+R13
+Z55 !s100 M7n:kXLlI07Yf:IB6>9d?3
+!i10b 1
+vglbl
+!i10b 1
+!s100 aVVS8hK:HW9CDiLU9`KX30
+I?QEB5aDW=2XOWC]V7lZhg3
+VM[9mS]S:KA1i4VeCMX35[3
+R5
+w1354684238
+8C:/Xilinx/14.4/ISE_DS/ISE/verilog/src/glbl.v
+FC:/Xilinx/14.4/ISE_DS/ISE/verilog/src/glbl.v
+L0 5
+R22
+r1
+!s85 0
+31
+!s108 1371481455.454000
+!s107 C:/Xilinx/14.4/ISE_DS/ISE/verilog/src/glbl.v|
+!s90 -reportprogress|300|-novopt|-incr|-work|work|C:/Xilinx/14.4/ISE_DS/ISE/verilog/src/glbl.v|+incdir+C:/Xilinx/14.4/ISE_DS/ISE/verilog/src/|
+R23
+!s92 -work work +incdir+C:/Xilinx/14.4/ISE_DS/ISE/verilog/src/ -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF

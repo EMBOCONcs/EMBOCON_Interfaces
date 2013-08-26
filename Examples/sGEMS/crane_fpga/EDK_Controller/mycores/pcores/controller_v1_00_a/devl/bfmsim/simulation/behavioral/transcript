@@ -1,0 +1,267 @@
+# Reading C:/modeltech_10.1c/tcl/vsim/pref.tcl 
+# //  ModelSim SE 10.1c Jul 27 2012 
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# do bfm_system_setup.do 
+# Setting up simulation commands ... 
+# ********************************************************************** 
+# ********************************************************************** 
+# *** 
+# *** Simulation Setup Macros (bfm_system_setup.do) 
+# *** 
+# *** c => compile the design by running the EDK compile script. 
+# *** Assumes ISE and EDK libraries were compiled earlier 
+# *** for ModelSim. (see bfm_system.do) 
+# *** 
+# *** s => load the design for simulation. (ModelSim 'vsim' 
+# *** command with 'bfm_system_tb') After loading the design, 
+# *** set up signal displays (optional) and run the simulation. 
+# *** (ModelSim 'run' command) 
+# *** 
+# *** l => set up signal list display and launch a list window. 
+# *** ModelSim 'add -list' commands are found in *_list.do 
+# *** scripts. (see bfm_system_list.do) 
+# *** 
+# *** w => set up signal wave display and launch a waveform window. 
+# *** ModelSim 'add -wave' commands are found in *_wave.do 
+# *** scripts. (see bfm_system_wave.do) 
+# *** 
+# *** h => print this message 
+# *** 
+# ********************************************************************** 
+# ********************************************************************** 
+dir *.DO
+#  Volume in drive C is ee-asuardi
+#  Volume Serial Number is 0220-9339
+# 
+#  Directory of C:\Users\asuardi\Desktop\CRANE_Vivado_HLS\EDK\pcores\controller_v1_00_a\devl\bfmsim\simulation\behavioral
+# 
+# 17/06/2013  16:02            14,913 axi4lite_bus_list.do
+# 17/06/2013  16:02            17,017 axi4lite_bus_wave.do
+# 17/06/2013  16:02             1,994 bfm_processor_list.do
+# 17/06/2013  16:02             2,269 bfm_processor_wave.do
+# 17/06/2013  16:02             1,850 bfm_system.do
+# 17/06/2013  16:02             1,717 bfm_system_list.do
+# 17/06/2013  16:02             2,399 bfm_system_setup.do
+# 17/06/2013  16:02             1,524 bfm_system_wave.do
+# 17/06/2013  16:02             1,797 controller_inst_list.do
+# 17/06/2013  16:02             2,054 controller_inst_wave.do
+#               10 File(s)         47,534 bytes
+#                0 Dir(s)  37,649,190,912 bytes free
+do bfm_system.do
+# Modifying C:\modeltech_10.1c\win32/../modelsim.ini
+# Modifying C:\modeltech_10.1c\win32/../modelsim.ini
+# Modifying C:\modeltech_10.1c\win32/../modelsim.ini
+# Modifying C:\modeltech_10.1c\win32/../modelsim.ini
+# Modifying C:\modeltech_10.1c\win32/../modelsim.ini
+# Modifying C:\modeltech_10.1c\win32/../modelsim.ini
+# Modifying C:\modeltech_10.1c\win32/../modelsim.ini
+# Modifying C:\modeltech_10.1c\win32/../modelsim.ini
+# Modifying C:\modeltech_10.1c\win32/../modelsim.ini
+# Modifying C:\modeltech_10.1c\win32/../modelsim.ini
+# Modifying C:\modeltech_10.1c\win32/../modelsim.ini
+# Modifying C:\modeltech_10.1c\win32/../modelsim.ini
+# Modifying C:\modeltech_10.1c\win32/../modelsim.ini
+# Modifying C:\modeltech_10.1c\win32/../modelsim.ini
+# Modifying C:\modeltech_10.1c\win32/../modelsim.ini
+# Model Technology ModelSim SE vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package proc_common_pkg
+# -- Compiling entity user_logic
+# -- Compiling architecture IMP of user_logic
+# Model Technology ModelSim SE vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package proc_common_pkg
+# -- Loading package ipif_pkg
+# -- Loading package NUMERIC_STD
+# -- Loading package VCOMPONENTS
+# -- Loading entity soft_reset
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Loading package family_support
+# -- Loading entity axi_lite_ipif
+# -- Loading entity user_logic
+# -- Compiling entity controller
+# -- Compiling architecture IMP of controller
+# Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module bfm_system_bfm_processor_wrapper
+# 
+# Top level modules:
+# 	bfm_system_bfm_processor_wrapper
+# Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module bfm_system_axi4lite_bus_wrapper
+# 
+# Top level modules:
+# 	bfm_system_axi4lite_bus_wrapper
+# Model Technology ModelSim SE vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VCOMPONENTS
+# -- Compiling entity bfm_system_controller_inst_wrapper
+# -- Compiling architecture STRUCTURE of bfm_system_controller_inst_wrapper
+# Model Technology ModelSim SE vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VCOMPONENTS
+# -- Compiling entity bfm_system
+# -- Compiling architecture STRUCTURE of bfm_system
+# Model Technology ModelSim SE vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VCOMPONENTS
+# -- Compiling entity bfm_system_tb
+# -- Compiling architecture STRUCTURE of bfm_system_tb
+# Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+h
+# ********************************************************************** 
+# ********************************************************************** 
+# *** 
+# *** Simulation Setup Macros (bfm_system_setup.do) 
+# *** 
+# *** c => compile the design by running the EDK compile script. 
+# *** Assumes ISE and EDK libraries were compiled earlier 
+# *** for ModelSim. (see bfm_system.do) 
+# *** 
+# *** s => load the design for simulation. (ModelSim 'vsim' 
+# *** command with 'bfm_system_tb') After loading the design, 
+# *** set up signal displays (optional) and run the simulation. 
+# *** (ModelSim 'run' command) 
+# *** 
+# *** l => set up signal list display and launch a list window. 
+# *** ModelSim 'add -list' commands are found in *_list.do 
+# *** scripts. (see bfm_system_list.do) 
+# *** 
+# *** w => set up signal wave display and launch a waveform window. 
+# *** ModelSim 'add -wave' commands are found in *_wave.do 
+# *** scripts. (see bfm_system_wave.do) 
+# *** 
+# *** h => print this message 
+# *** 
+# ********************************************************************** 
+# ********************************************************************** 
+l
+# Setting up List window display ... 
+# Warning : c compile command was not run 
+# Warning : s simulate command was not run 
+# /
+# /bfm_system_tb/dut
+# -bin
+# -hex
+# -bin
+# -hex
+# /
+# -bin
+# -hex
+# /
+# -bin
+# -hex
+# /
+# List window display setup done. 
+h
+# ********************************************************************** 
+# ********************************************************************** 
+# *** 
+# *** Simulation Setup Macros (bfm_system_setup.do) 
+# *** 
+# *** c => compile the design by running the EDK compile script. 
+# *** Assumes ISE and EDK libraries were compiled earlier 
+# *** for ModelSim. (see bfm_system.do) 
+# *** 
+# *** s => load the design for simulation. (ModelSim 'vsim' 
+# *** command with 'bfm_system_tb') After loading the design, 
+# *** set up signal displays (optional) and run the simulation. 
+# *** (ModelSim 'run' command) 
+# *** 
+# *** l => set up signal list display and launch a list window. 
+# *** ModelSim 'add -list' commands are found in *_list.do 
+# *** scripts. (see bfm_system_list.do) 
+# *** 
+# *** w => set up signal wave display and launch a waveform window. 
+# *** ModelSim 'add -wave' commands are found in *_wave.do 
+# *** scripts. (see bfm_system_wave.do) 
+# *** 
+# *** h => print this message 
+# *** 
+# ********************************************************************** 
+# ********************************************************************** 
+w
+# Setting up Wave window display ... 
+# Warning : c compile command was not run 
+# Warning : s simulate command was not run 
+# /
+# -logic
+# -literal -hex
+# -logic
+# -literal -hex
+# /
+# -logic
+# -literal -hex
+# /
+# -logic
+# -literal -hex
+# /
+# Wave window display setup done. 
+h
+# ********************************************************************** 
+# ********************************************************************** 
+# *** 
+# *** Simulation Setup Macros (bfm_system_setup.do) 
+# *** 
+# *** c => compile the design by running the EDK compile script. 
+# *** Assumes ISE and EDK libraries were compiled earlier 
+# *** for ModelSim. (see bfm_system.do) 
+# *** 
+# *** s => load the design for simulation. (ModelSim 'vsim' 
+# *** command with 'bfm_system_tb') After loading the design, 
+# *** set up signal displays (optional) and run the simulation. 
+# *** (ModelSim 'run' command) 
+# *** 
+# *** l => set up signal list display and launch a list window. 
+# *** ModelSim 'add -list' commands are found in *_list.do 
+# *** scripts. (see bfm_system_list.do) 
+# *** 
+# *** w => set up signal wave display and launch a waveform window. 
+# *** ModelSim 'add -wave' commands are found in *_wave.do 
+# *** scripts. (see bfm_system_wave.do) 
+# *** 
+# *** h => print this message 
+# *** 
+# ********************************************************************** 
+# ********************************************************************** 
+s
+# vsim +notimingchecks -L xilinxcorelib_ver -L secureip -L unisims_ver -L unimacro_ver -pli libxil_vsim.dll -t ps -novopt bfm_system_tb glbl 
+# Loading libxil_vsim.dll
+# ** Error: (vsim-3193) Load of "libxil_vsim.dll" failed: Bad DLL format.
+# 
+# ** Error: (vsim-PLI-3002) Failed to load PLI object file "libxil_vsim.dll".
+# 
+#         Region: /
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading unisim.vcomponents
+# Loading work.bfm_system_tb(structure)
+# Loading work.glbl
+# Error loading design
+# 1

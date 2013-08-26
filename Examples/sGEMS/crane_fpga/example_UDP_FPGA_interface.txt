@@ -1,0 +1,64 @@
+-------------------------------------------
+makeOptStep function to interface with FPGA
+-------------------------------------------
+
+
+int makeOptStep(emb_optimizer optim, emb_opt_context opt_context, const double xcur[], const double uprev[], double ucur[])
+{
+    
+    int flag;
+	unsigned int i;
+	double  *eTime;
+    
+    
+	emb_size_type nx = getOptModelStateCount(optim);
+	emb_size_type nu = getOptModelInputCount(optim);
+    
+    // Ethernet handle variables
+	int 	socket_handle;
+	struct 	sockaddr_in server_address;
+	int 	saddr_len = sizeof(server_address);
+	
+	
+	//Ethernet port initialization
+	int port_number=2007;           	 // Ethernet port number
+    char *strHostname = "192.168.1.10";     // Ethernet IP
+
+    double X[N_INPUTS], U[N_OUTPUTS];  
+    
+   
+
+    /* variables must be passed as int */
+    //current state
+    for (i=0; i<nx; i++) {
+        X[i] = (double)xcur[i];
+    }
+    //refernce
+    for (i=nx; i<nx*2; i++) {
+        X[i] = (double)xref[i];
+    }
+    //dummy
+    X[nx*2] = 1;
+     
+    for (i=0; i<nu; i++) {
+        U[i] = (double)ucur[i];
+    }
+    
+    
+   //Call controller on FPGA 
+   flag = UDPclient_combined( strHostname,  X,  U, N_INPUTS, N_OUTPUTS, eTime);
+    
+
+    /* pass the output */
+    for (i=0; i<nu; i++) {
+        ucur[i] = (double)U[i];
+    }
+
+    /* check if control law was found, if not, stop the simulation */
+    if (flag<1) {
+        return 1;
+    }
+
+    
+	return 0;
+}

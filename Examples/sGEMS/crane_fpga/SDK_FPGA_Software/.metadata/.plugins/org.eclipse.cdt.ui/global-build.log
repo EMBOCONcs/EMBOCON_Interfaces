@@ -1,0 +1,765 @@
+11:44:12 **** Build of project controller_server_0_bsp ****
+make -k all 
+libgen -hw ../tmp_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../tmp_hw_platform/system.xml -pe microblaze_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Runnning DRC for lwIP library... 
+
+
+
+lwIP can be used with the following EMAC peripherals found in your system:
+ethernet_lite
+
+Running generate.
+Little Endian system
+
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.b  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.b  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling lwIP"
+"Compiling lwIP adapter for Xilinx MAC"
+"Creating archive liblwip4.a"
+"Compiling tmrctr"
+"Compiling v6_ddrx"
+"Compiling uartlite"
+"Compiling emaclite"
+"Compiling bram"
+"Compiling intc"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+11:44:54 **** Build of configuration Debug for project controller_server_0 ****
+make all 
+'Building file: ../src/echo.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../controller_server_0_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/echo.d" -MT"src/echo.d" -o "src/echo.o" "../src/echo.c"
+'Finished building: ../src/echo.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../controller_server_0_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../controller_server_0_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+../src/platform.c: In function 'timer_callback':
+../src/platform.c:39:2: warning: implicit declaration of function 'tcp_fasttmr' [-Wimplicit-function-declaration]
+../src/platform.c:43:3: warning: implicit declaration of function 'tcp_slowtmr' [-Wimplicit-function-declaration]
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/platform_mb.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../controller_server_0_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform_mb.d" -MT"src/platform_mb.d" -o "src/platform_mb.o" "../src/platform_mb.c"
+'Finished building: ../src/platform_mb.c'
+' '
+'Building file: ../src/platform_ppc.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../controller_server_0_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform_ppc.d" -MT"src/platform_ppc.d" -o "src/platform_ppc.o" "../src/platform_ppc.c"
+'Finished building: ../src/platform_ppc.c'
+' '
+'Building file: ../src/platform_zynq.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../controller_server_0_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform_zynq.d" -MT"src/platform_zynq.d" -o "src/platform_zynq.o" "../src/platform_zynq.c"
+'Finished building: ../src/platform_zynq.c'
+' '
+'Building target: controller_server_0.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../controller_server_0_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "controller_server_0.elf"  ./src/echo.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: controller_server_0.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size controller_server_0.elf  |tee "controller_server_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 112772	   1552	 750444	 864768	  d3200	controller_server_0.elf
+'Finished building: controller_server_0.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck controller_server_0.elf -hw ../../tmp_hw_platform/system.xml -pe microblaze_0  |tee "controller_server_0.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../tmp_hw_platform/system.xml -pe microblaze_0
+controller_server_0.elf 
+
+ELF file	: controller_server_0.elf
+elfcheck passed.
+'Finished building: controller_server_0.elf.elfcheck'
+' '
+11:48:01 **** Auto Build of configuration Debug for project controller_server_0 ****
+make all 
+make: Nothing to be done for `all'.
+11:48:21 **** Auto Build of configuration Debug for project controller_server_0 ****
+make all 
+'Building file: ../src/echo.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../controller_server_0_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/echo.d" -MT"src/echo.d" -o "src/echo.o" "../src/echo.c"
+../src/echo.c:25:24: fatal error: controller.h: No such file or directory
+compilation terminated.
+make: *** [src/echo.o] Error 1
+11:51:29 **** Auto Build of configuration Debug for project controller_server_0 ****
+make all 
+'Building file: ../src/echo.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../controller_server_0_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/echo.d" -MT"src/echo.d" -o "src/echo.o" "../src/echo.c"
+../src/echo.c: In function 'init_circuit':
+../src/echo.c:53:4: warning: implicit declaration of function 'CONTROLLER_mReset' [-Wimplicit-function-declaration]
+../src/echo.c: In function 'udp_server_function':
+../src/echo.c:109:4: warning: implicit declaration of function 'CONTROLLER_mWriteReg' [-Wimplicit-function-declaration]
+../src/echo.c:125:4: warning: implicit declaration of function 'CONTROLLER_mReadReg' [-Wimplicit-function-declaration]
+../src/echo.c:143:10: warning: unused variable 'payload_read_fl' [-Wunused-variable]
+'Finished building: ../src/echo.c'
+' '
+'Building target: controller_server_0.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../controller_server_0_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "controller_server_0.elf"  ./src/echo.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+./src/echo.o: In function `init_circuit':
+C:\Users\asuardi\Desktop\CRANE_Vivado_HLS\final\SDK_FPGA_Software\controller_server_0\Debug/../src/echo.c:53: undefined reference to `CONTROLLER_mReset'
+./src/echo.o: In function `udp_server_function':
+C:\Users\asuardi\Desktop\CRANE_Vivado_HLS\final\SDK_FPGA_Software\controller_server_0\Debug/../src/echo.c:109: undefined reference to `CONTROLLER_mWriteReg'
+C:\Users\asuardi\Desktop\CRANE_Vivado_HLS\final\SDK_FPGA_Software\controller_server_0\Debug/../src/echo.c:111: undefined reference to `CONTROLLER_mWriteReg'
+C:\Users\asuardi\Desktop\CRANE_Vivado_HLS\final\SDK_FPGA_Software\controller_server_0\Debug/../src/echo.c:125: undefined reference to `CONTROLLER_mReadReg'
+C:\Users\asuardi\Desktop\CRANE_Vivado_HLS\final\SDK_FPGA_Software\controller_server_0\Debug/../src/echo.c:139: undefined reference to `CONTROLLER_mReadReg'
+collect2: ld returned 1 exit status
+make: *** [controller_server_0.elf] Error 1
+11:51:44 **** Auto Build of configuration Debug for project controller_server_0 ****
+make all 
+'Building file: ../src/echo.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../controller_server_0_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/echo.d" -MT"src/echo.d" -o "src/echo.o" "../src/echo.c"
+../src/echo.c:25:24: fatal error: controller.h: No such file or directory
+compilation terminated.
+make: *** [src/echo.o] Error 1
+11:55:18 **** Clean-only build of project controller_server_0_bsp ****
+make -k clean 
+rm -rf microblaze_0
+11:55:18 **** Build of project controller_server_0_bsp ****
+make -k all 
+libgen -hw ../tmp_hw_platform/system.xml\
+	       -lp C:/Users/asuardi/Desktop/CRANE_Vivado_HLS/final/EDK_Controller/mycores/drivers\
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../tmp_hw_platform/system.xml -lp
+C:/Users/asuardi/Desktop/CRANE_Vivado_HLS/final/EDK_Controller/mycores/drivers
+-pe microblaze_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Runnning DRC for lwIP library... 
+
+
+
+lwIP can be used with the following EMAC peripherals found in your system:
+ethernet_lite
+
+Running generate.
+Little Endian system
+
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.b  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.b  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling lwIP"
+"Compiling lwIP adapter for Xilinx MAC"
+"Creating archive liblwip4.a"
+"Compiling tmrctr"
+"Compiling v6_ddrx"
+"Compiling uartlite"
+"Compiling emaclite"
+"Compiling bram"
+"Compiling intc"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+11:55:36 **** Auto Build of configuration Debug for project controller_server_0 ****
+make all 
+'Building file: ../src/echo.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../controller_server_0_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/echo.d" -MT"src/echo.d" -o "src/echo.o" "../src/echo.c"
+../src/echo.c:25:24: fatal error: controller.h: No such file or directory
+compilation terminated.
+make: *** [src/echo.o] Error 1
+11:56:51 **** Clean-only build of project controller_server_0_bsp ****
+make -k clean 
+rm -rf microblaze_0
+11:56:53 **** Build of project controller_server_0_bsp ****
+make -k all 
+libgen -hw ../tmp_hw_platform/system.xml\
+	       -lp C:/Users/asuardi/Desktop/CRANE_Vivado_HLS/final/EDK_Controller/mycores\
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../tmp_hw_platform/system.xml -lp
+C:/Users/asuardi/Desktop/CRANE_Vivado_HLS/final/EDK_Controller/mycores -pe
+microblaze_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Runnning DRC for lwIP library... 
+
+
+
+lwIP can be used with the following EMAC peripherals found in your system:
+ethernet_lite
+
+Running generate.
+Little Endian system
+
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.b  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.b  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling lwIP"
+"Compiling lwIP adapter for Xilinx MAC"
+"Creating archive liblwip4.a"
+"Compiling tmrctr"
+"Compiling v6_ddrx"
+"Compiling uartlite"
+"Compiling emaclite"
+"Compiling bram"
+"Compiling intc"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+11:57:10 **** Clean-only build of project controller_server_0_bsp ****
+make -k clean 
+rm -rf microblaze_0
+11:57:13 **** Build of project controller_server_0_bsp ****
+make -k all 
+libgen -hw ../tmp_hw_platform/system.xml\
+	       -lp C:/Users/asuardi/Desktop/CRANE_Vivado_HLS/final/EDK_Controller/mycores\
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../tmp_hw_platform/system.xml -lp
+C:/Users/asuardi/Desktop/CRANE_Vivado_HLS/final/EDK_Controller/mycores -pe
+microblaze_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Runnning DRC for lwIP library... 
+
+
+
+lwIP can be used with the following EMAC peripherals found in your system:
+ethernet_lite
+
+Running generate.
+Little Endian system
+
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.b  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.b  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling lwIP"
+"Compiling lwIP adapter for Xilinx MAC"
+"Creating archive liblwip4.a"
+"Compiling tmrctr"
+"Compiling controller"
+"Compiling v6_ddrx"
+"Compiling uartlite"
+"Compiling emaclite"
+"Compiling bram"
+"Compiling intc"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+11:57:29 **** Auto Build of configuration Debug for project controller_server_0 ****
+make all 
+'Building file: ../src/echo.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../controller_server_0_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/echo.d" -MT"src/echo.d" -o "src/echo.o" "../src/echo.c"
+../src/echo.c: In function 'udp_server_function':
+../src/echo.c:143:10: warning: unused variable 'payload_read_fl' [-Wunused-variable]
+'Finished building: ../src/echo.c'
+' '
+'Building target: controller_server_0.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../controller_server_0_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "controller_server_0.elf"  ./src/echo.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: controller_server_0.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size controller_server_0.elf  |tee "controller_server_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 112240	   1548	 750564	 864352	  d3060	controller_server_0.elf
+'Finished building: controller_server_0.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck controller_server_0.elf -hw ../../tmp_hw_platform/system.xml -pe microblaze_0  |tee "controller_server_0.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../tmp_hw_platform/system.xml -pe microblaze_0
+controller_server_0.elf 
+
+ELF file	: controller_server_0.elf
+elfcheck passed.
+'Finished building: controller_server_0.elf.elfcheck'
+' '
+12:11:24 **** Incremental Build of configuration Debug for project controller_server_0 ****
+make all 
+make: Nothing to be done for `all'.
+12:11:47 **** Auto Build of configuration Debug for project controller_server_0 ****
+make all 
+'Building file: ../src/echo.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../controller_server_0_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/echo.d" -MT"src/echo.d" -o "src/echo.o" "../src/echo.c"
+../src/echo.c: In function 'udp_server_function':
+../src/echo.c:142:10: warning: unused variable 'payload_read_fl' [-Wunused-variable]
+'Finished building: ../src/echo.c'
+' '
+'Building target: controller_server_0.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../controller_server_0_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "controller_server_0.elf"  ./src/echo.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: controller_server_0.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size controller_server_0.elf  |tee "controller_server_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 112240	   1548	 750564	 864352	  d3060	controller_server_0.elf
+'Finished building: controller_server_0.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck controller_server_0.elf -hw ../../tmp_hw_platform/system.xml -pe microblaze_0  |tee "controller_server_0.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../tmp_hw_platform/system.xml -pe microblaze_0
+controller_server_0.elf 
+
+ELF file	: controller_server_0.elf
+elfcheck passed.
+'Finished building: controller_server_0.elf.elfcheck'
+' '
+12:22:03 **** Auto Build of project controller_server_0_bsp ****
+make -k all 
+'Finished building libraries'
+12:22:19 **** Incremental Build of configuration Debug for project controller_server_0 ****
+make all 
+make: Nothing to be done for `all'.
+12:22:54 **** Incremental Build of configuration Debug for project controller_server_0 ****
+make all 
+make: Nothing to be done for `all'.
+13:18:54 **** Auto Build of configuration Debug for project controller_server_0 ****
+make all 
+'Building file: ../src/echo.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../controller_server_0_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/echo.d" -MT"src/echo.d" -o "src/echo.o" "../src/echo.c"
+../src/echo.c: In function 'udp_server_function':
+../src/echo.c:141:10: warning: unused variable 'payload_read_fl' [-Wunused-variable]
+'Finished building: ../src/echo.c'
+' '
+'Building target: controller_server_0.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../controller_server_0_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "controller_server_0.elf"  ./src/echo.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: controller_server_0.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size controller_server_0.elf  |tee "controller_server_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 112240	   1548	 750564	 864352	  d3060	controller_server_0.elf
+'Finished building: controller_server_0.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck controller_server_0.elf -hw ../../tmp_hw_platform/system.xml -pe microblaze_0  |tee "controller_server_0.elf.elfcheck"
+elfcheck
+Xilinx EDK 2013.2 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../tmp_hw_platform/system.xml -pe microblaze_0
+controller_server_0.elf 
+
+ELF file	: controller_server_0.elf
+elfcheck passed.
+'Finished building: controller_server_0.elf.elfcheck'
+' '
+13:19:50 **** Auto Build of project controller_server_0_bsp ****
+make -k all 
+'Finished building libraries'
+13:20:14 **** Incremental Build of configuration Debug for project controller_server_0 ****
+make all 
+make: Nothing to be done for `all'.
+14:40:53 **** Incremental Build of configuration Debug for project controller_server_0 ****
+make all 
+make: Nothing to be done for `all'.
+14:43:56 **** Auto Build of configuration Debug for project controller_server_0 ****
+make all 
+'Building file: ../src/echo.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../controller_server_0_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/echo.d" -MT"src/echo.d" -o "src/echo.o" "../src/echo.c"
+../src/echo.c: In function 'udp_server_function':
+../src/echo.c:144:10: warning: unused variable 'payload_read_fl' [-Wunused-variable]
+'Finished building: ../src/echo.c'
+' '
+'Building target: controller_server_0.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../controller_server_0_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "controller_server_0.elf"  ./src/echo.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: controller_server_0.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size controller_server_0.elf  |tee "controller_server_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 112376	   1548	 750564	 864488	  d30e8	controller_server_0.elf
+'Finished building: controller_server_0.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck controller_server_0.elf -hw ../../tmp_hw_platform/system.xml -pe microblaze_0  |tee "controller_server_0.elf.elfcheck"
+elfcheck
+Xilinx EDK 2013.2 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../tmp_hw_platform/system.xml -pe microblaze_0
+controller_server_0.elf 
+
+ELF file	: controller_server_0.elf
+elfcheck passed.
+'Finished building: controller_server_0.elf.elfcheck'
+' '
+14:44:17 **** Incremental Build of configuration Debug for project controller_server_0 ****
+make all 
+make: Nothing to be done for `all'.
+14:44:48 **** Auto Build of configuration Debug for project controller_server_0 ****
+make all 
+'Building file: ../src/echo.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../controller_server_0_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/echo.d" -MT"src/echo.d" -o "src/echo.o" "../src/echo.c"
+../src/echo.c: In function 'udp_server_function':
+../src/echo.c:144:10: warning: unused variable 'payload_read_fl' [-Wunused-variable]
+'Finished building: ../src/echo.c'
+' '
+'Building target: controller_server_0.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../controller_server_0_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "controller_server_0.elf"  ./src/echo.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: controller_server_0.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size controller_server_0.elf  |tee "controller_server_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 112380	   1548	 750568	 864496	  d30f0	controller_server_0.elf
+'Finished building: controller_server_0.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck controller_server_0.elf -hw ../../tmp_hw_platform/system.xml -pe microblaze_0  |tee "controller_server_0.elf.elfcheck"
+elfcheck
+Xilinx EDK 2013.2 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../tmp_hw_platform/system.xml -pe microblaze_0
+controller_server_0.elf 
+
+ELF file	: controller_server_0.elf
+elfcheck passed.
+'Finished building: controller_server_0.elf.elfcheck'
+' '
+14:44:57 **** Incremental Build of configuration Debug for project controller_server_0 ****
+make all 
+make: Nothing to be done for `all'.
+14:45:36 **** Incremental Build of configuration Debug for project controller_server_0 ****
+make all 
+make: Nothing to be done for `all'.
+14:46:28 **** Auto Build of configuration Debug for project controller_server_0 ****
+make all 
+'Building file: ../src/echo.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../controller_server_0_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/echo.d" -MT"src/echo.d" -o "src/echo.o" "../src/echo.c"
+../src/echo.c: In function 'udp_server_function':
+../src/echo.c:148:10: warning: unused variable 'payload_read_fl' [-Wunused-variable]
+'Finished building: ../src/echo.c'
+' '
+'Building target: controller_server_0.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../controller_server_0_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "controller_server_0.elf"  ./src/echo.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: controller_server_0.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size controller_server_0.elf  |tee "controller_server_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 112460	   1548	 750568	 864576	  d3140	controller_server_0.elf
+'Finished building: controller_server_0.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck controller_server_0.elf -hw ../../tmp_hw_platform/system.xml -pe microblaze_0  |tee "controller_server_0.elf.elfcheck"
+elfcheck
+Xilinx EDK 2013.2 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../tmp_hw_platform/system.xml -pe microblaze_0
+controller_server_0.elf 
+
+ELF file	: controller_server_0.elf
+elfcheck passed.
+'Finished building: controller_server_0.elf.elfcheck'
+' '
+14:46:36 **** Incremental Build of configuration Debug for project controller_server_0 ****
+make all 
+make: Nothing to be done for `all'.
+14:47:41 **** Auto Build of configuration Debug for project controller_server_0 ****
+make all 
+'Building file: ../src/echo.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../controller_server_0_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/echo.d" -MT"src/echo.d" -o "src/echo.o" "../src/echo.c"
+../src/echo.c: In function 'udp_server_function':
+../src/echo.c:150:10: warning: unused variable 'payload_read_fl' [-Wunused-variable]
+'Finished building: ../src/echo.c'
+' '
+'Building target: controller_server_0.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../controller_server_0_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "controller_server_0.elf"  ./src/echo.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: controller_server_0.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size controller_server_0.elf  |tee "controller_server_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 112460	   1548	 750568	 864576	  d3140	controller_server_0.elf
+'Finished building: controller_server_0.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck controller_server_0.elf -hw ../../tmp_hw_platform/system.xml -pe microblaze_0  |tee "controller_server_0.elf.elfcheck"
+elfcheck
+Xilinx EDK 2013.2 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../tmp_hw_platform/system.xml -pe microblaze_0
+controller_server_0.elf 
+
+ELF file	: controller_server_0.elf
+elfcheck passed.
+'Finished building: controller_server_0.elf.elfcheck'
+' '
+14:47:49 **** Incremental Build of configuration Debug for project controller_server_0 ****
+make all 
+make: Nothing to be done for `all'.
+14:48:28 **** Auto Build of configuration Debug for project controller_server_0 ****
+make all 
+'Building file: ../src/echo.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../controller_server_0_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/echo.d" -MT"src/echo.d" -o "src/echo.o" "../src/echo.c"
+../src/echo.c: In function 'udp_server_function':
+../src/echo.c:147:10: warning: unused variable 'payload_read_fl' [-Wunused-variable]
+'Finished building: ../src/echo.c'
+' '
+'Building target: controller_server_0.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../controller_server_0_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "controller_server_0.elf"  ./src/echo.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: controller_server_0.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size controller_server_0.elf  |tee "controller_server_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 112380	   1548	 750568	 864496	  d30f0	controller_server_0.elf
+'Finished building: controller_server_0.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck controller_server_0.elf -hw ../../tmp_hw_platform/system.xml -pe microblaze_0  |tee "controller_server_0.elf.elfcheck"
+elfcheck
+Xilinx EDK 2013.2 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../tmp_hw_platform/system.xml -pe microblaze_0
+controller_server_0.elf 
+
+ELF file	: controller_server_0.elf
+elfcheck passed.
+'Finished building: controller_server_0.elf.elfcheck'
+' '
+14:48:55 **** Auto Build of configuration Debug for project controller_server_0 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../controller_server_0_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: controller_server_0.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../controller_server_0_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "controller_server_0.elf"  ./src/echo.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: controller_server_0.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size controller_server_0.elf  |tee "controller_server_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 112428	   1548	 750504	 864480	  d30e0	controller_server_0.elf
+'Finished building: controller_server_0.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck controller_server_0.elf -hw ../../tmp_hw_platform/system.xml -pe microblaze_0  |tee "controller_server_0.elf.elfcheck"
+elfcheck
+Xilinx EDK 2013.2 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../tmp_hw_platform/system.xml -pe microblaze_0
+controller_server_0.elf 
+
+ELF file	: controller_server_0.elf
+elfcheck passed.
+'Finished building: controller_server_0.elf.elfcheck'
+' '
+14:49:05 **** Incremental Build of configuration Debug for project controller_server_0 ****
+make all 
+make: Nothing to be done for `all'.
+14:49:29 **** Auto Build of configuration Debug for project controller_server_0 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../controller_server_0_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: controller_server_0.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../controller_server_0_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "controller_server_0.elf"  ./src/echo.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: controller_server_0.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size controller_server_0.elf  |tee "controller_server_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 112344	   1548	 750500	 864392	  d3088	controller_server_0.elf
+'Finished building: controller_server_0.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck controller_server_0.elf -hw ../../tmp_hw_platform/system.xml -pe microblaze_0  |tee "controller_server_0.elf.elfcheck"
+elfcheck
+Xilinx EDK 2013.2 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../tmp_hw_platform/system.xml -pe microblaze_0
+controller_server_0.elf 
+
+ELF file	: controller_server_0.elf
+elfcheck passed.
+'Finished building: controller_server_0.elf.elfcheck'
+' '
+14:49:41 **** Auto Build of configuration Debug for project controller_server_0 ****
+make all 
+'Building file: ../src/echo.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../controller_server_0_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/echo.d" -MT"src/echo.d" -o "src/echo.o" "../src/echo.c"
+../src/echo.c: In function 'udp_server_function':
+../src/echo.c:144:10: warning: unused variable 'payload_read_fl' [-Wunused-variable]
+'Finished building: ../src/echo.c'
+' '
+'Building target: controller_server_0.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../controller_server_0_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "controller_server_0.elf"  ./src/echo.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: controller_server_0.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size controller_server_0.elf  |tee "controller_server_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 112324	   1548	 750504	 864376	  d3078	controller_server_0.elf
+'Finished building: controller_server_0.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck controller_server_0.elf -hw ../../tmp_hw_platform/system.xml -pe microblaze_0  |tee "controller_server_0.elf.elfcheck"
+elfcheck
+Xilinx EDK 2013.2 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../tmp_hw_platform/system.xml -pe microblaze_0
+controller_server_0.elf 
+
+ELF file	: controller_server_0.elf
+elfcheck passed.
+'Finished building: controller_server_0.elf.elfcheck'
+' '
+14:50:03 **** Incremental Build of configuration Debug for project controller_server_0 ****
+make all 
+make: Nothing to be done for `all'.
+14:50:40 **** Auto Build of configuration Debug for project controller_server_0 ****
+make all 
+'Building file: ../src/echo.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../controller_server_0_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/echo.d" -MT"src/echo.d" -o "src/echo.o" "../src/echo.c"
+../src/echo.c: In function 'udp_server_function':
+../src/echo.c:146:10: warning: unused variable 'payload_read_fl' [-Wunused-variable]
+'Finished building: ../src/echo.c'
+' '
+'Building target: controller_server_0.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../controller_server_0_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "controller_server_0.elf"  ./src/echo.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: controller_server_0.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size controller_server_0.elf  |tee "controller_server_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 112364	   1548	 750504	 864416	  d30a0	controller_server_0.elf
+'Finished building: controller_server_0.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck controller_server_0.elf -hw ../../tmp_hw_platform/system.xml -pe microblaze_0  |tee "controller_server_0.elf.elfcheck"
+elfcheck
+Xilinx EDK 2013.2 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../tmp_hw_platform/system.xml -pe microblaze_0
+controller_server_0.elf 
+
+ELF file	: controller_server_0.elf
+elfcheck passed.
+'Finished building: controller_server_0.elf.elfcheck'
+' '
+14:50:50 **** Incremental Build of configuration Debug for project controller_server_0 ****
+make all 
+make: Nothing to be done for `all'.

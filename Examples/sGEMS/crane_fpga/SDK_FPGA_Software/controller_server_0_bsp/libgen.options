@@ -1,0 +1,3 @@
+PROCESSOR=microblaze_0
+REPOSITORIES=-lp C:/Users/asuardi/Desktop/CRANE_Vivado_HLS/final/EDK_Controller/mycores
+HWSPEC=../tmp_hw_platform/system.xml

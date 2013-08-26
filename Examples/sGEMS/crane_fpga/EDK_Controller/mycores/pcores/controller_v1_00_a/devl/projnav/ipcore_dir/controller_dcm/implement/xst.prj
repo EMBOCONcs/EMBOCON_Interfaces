@@ -1,0 +1,2 @@
+vhdl work ../../controller_dcm.vhd
+vhdl work ../example_design/controller_dcm_exdes.vhd

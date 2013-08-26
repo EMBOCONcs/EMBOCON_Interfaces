@@ -1,0 +1,101 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\asuardi\Desktop\CRANE_Vivado_HLS\EDK\pcores\controller_v1_00_a\devl\bfmsim\simulation\behavioral
+Econtroller
+Z1 w1371478854
+Z2 DEx18 controller_v1_00_a 10 user_logic 0 22 F[P=4lZ9FnTLkoF2M;o_?3
+Z3 DPx19 proc_common_v3_00_a 14 family_support 0 22 Qb6cH:eT2@imh9enjH4zE3
+Z4 DPx8 synopsys 10 attributes 0 22 J^T`lPA_8_J<l8kQiVE]>2
+Z5 DPx4 ieee 14 std_logic_misc 0 22 >dU:RInm^_6_mBJ^<6QGY2
+Z6 DEx21 axi_lite_ipif_v1_01_a 13 axi_lite_ipif 0 22 Fzb_11geQY0Sn]_C1FXZQ3
+Z7 DPx6 unisim 11 vcomponents 0 22 62916OzHX@2hk`I`Z:naL2
+Z8 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z9 DEx19 proc_common_v3_00_a 10 soft_reset 0 22 0;k0TXGT?m^`AXFR0P]7R2
+Z10 DPx19 proc_common_v3_00_a 8 ipif_pkg 0 22 3?=iE3WDFYERHH?>TEf3S1
+Z11 DPx19 proc_common_v3_00_a 15 proc_common_pkg 0 22 3E3GzzfeZk^:Y<0U>TCzn1
+Z12 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z13 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z14 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z15 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z16 dC:\Users\asuardi\Desktop\CRANE_Vivado_HLS\EDK\pcores\controller_v1_00_a\devl\bfmsim\simulation\behavioral
+Z17 8C:/Users/asuardi/Desktop/CRANE_Vivado_HLS/EDK/pcores/controller_v1_00_a/hdl/vhdl/controller.vhd
+Z18 FC:/Users/asuardi/Desktop/CRANE_Vivado_HLS/EDK/pcores/controller_v1_00_a/hdl/vhdl/controller.vhd
+l0
+L115
+ViD7KO_;BIJW4k5hP3Go:O1
+!s100 8:S24`3:dzI5L0IX7T7KH2
+Z19 OE;C;10.1c;51
+31
+!i10b 1
+Z20 !s108 1371481451.880000
+Z21 !s90 -reportprogress|300|-novopt|-93|-work|controller_v1_00_a|C:/Users/asuardi/Desktop/CRANE_Vivado_HLS/EDK/pcores/controller_v1_00_a/hdl/vhdl/controller.vhd|
+Z22 !s107 C:/Users/asuardi/Desktop/CRANE_Vivado_HLS/EDK/pcores/controller_v1_00_a/hdl/vhdl/controller.vhd|
+Z23 o-93 -work controller_v1_00_a
+Aimp
+R2
+R9
+R6
+R3
+R4
+R5
+R7
+R8
+R10
+R11
+R12
+R13
+R14
+R15
+DEx4 work 10 controller 0 22 iD7KO_;BIJW4k5hP3Go:O1
+l254
+L180
+V66e^8n=T7;oIQmZab]:M03
+!s100 ZMCEOSZ2[><]nL_W:S8RX0
+R19
+31
+!i10b 1
+R20
+R21
+R22
+R23
+Euser_logic
+R1
+R11
+R12
+R13
+R14
+R15
+R16
+Z24 8C:/Users/asuardi/Desktop/CRANE_Vivado_HLS/EDK/pcores/controller_v1_00_a/hdl/vhdl/user_logic.vhd
+Z25 FC:/Users/asuardi/Desktop/CRANE_Vivado_HLS/EDK/pcores/controller_v1_00_a/hdl/vhdl/user_logic.vhd
+l0
+L84
+VF[P=4lZ9FnTLkoF2M;o_?3
+R19
+31
+Z26 !s108 1371481451.674000
+Z27 !s90 -reportprogress|300|-novopt|-93|-work|controller_v1_00_a|C:/Users/asuardi/Desktop/CRANE_Vivado_HLS/EDK/pcores/controller_v1_00_a/hdl/vhdl/user_logic.vhd|
+Z28 !s107 C:/Users/asuardi/Desktop/CRANE_Vivado_HLS/EDK/pcores/controller_v1_00_a/hdl/vhdl/user_logic.vhd|
+R23
+!s100 B?4CWWaDdiPXk^<T]ez^B0
+!i10b 1
+Aimp
+R11
+R12
+R13
+R14
+R15
+DEx4 work 10 user_logic 0 22 F[P=4lZ9FnTLkoF2M;o_?3
+l147
+L130
+V4;7lmJgjIo^Aj1<R<f>dP2
+R19
+31
+R26
+R27
+R28
+R23
+!s100 ZPo_i>]i>;IJ>07T^ZcIN0
+!i10b 1

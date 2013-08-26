@@ -1,0 +1,72 @@
+##############################################################################
+## Filename:          C:/Users/asuardi/Desktop/CRANE_Vivado_HLS/EDK/pcores/controller_v1_00_a/data/controller_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Mon Jun 17 15:20:54 2013 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a  all 
+lib axi_lite_ipif_v1_01_a  all 
+lib controller_v1_00_a user_logic vhdl
+lib controller_v1_00_a controller vhdl
+                            
+lib controller_v1_00_a AESL_Comp vhdl                           
+lib controller_v1_00_a AESL_Comp_core vhdl                      
+lib controller_v1_00_a AESL_pkg vhdl                            
+      
+lib controller_v1_00_a controller_dcm vhdl    	  
+lib controller_v1_00_a funeval vhdl                             
+lib controller_v1_00_a funeval_FGM_F_V vhdl                     
+lib controller_v1_00_a funeval_FGM_premat_xout_V vhdl           
+lib controller_v1_00_a funeval_FGM_premat_xr_V vhdl             
+lib controller_v1_00_a funeval_f_V vhdl                         
+lib controller_v1_00_a funeval_grp_fu_10154_ACMP_mul_13 vhdl    
+lib controller_v1_00_a funeval_grp_fu_10442_ACMP_mul_14 vhdl    
+lib controller_v1_00_a funeval_grp_fu_10745_ACMP_mul_15 vhdl    
+lib controller_v1_00_a funeval_grp_fu_11038_ACMP_mul_16 vhdl    
+lib controller_v1_00_a funeval_grp_fu_11342_ACMP_mul_17 vhdl    
+lib controller_v1_00_a funeval_grp_fu_11634_ACMP_mul_18 vhdl    
+lib controller_v1_00_a funeval_grp_fu_11932_ACMP_mul_19 vhdl    
+lib controller_v1_00_a funeval_grp_fu_12237_ACMP_mul_20 vhdl    
+lib controller_v1_00_a funeval_grp_fu_12530_ACMP_mul_21 vhdl    
+lib controller_v1_00_a funeval_grp_fu_12828_ACMP_mul_22 vhdl    
+lib controller_v1_00_a funeval_grp_fu_13131_ACMP_mul_23 vhdl    
+lib controller_v1_00_a funeval_grp_fu_13659_ACMP_mul_24 vhdl    
+lib controller_v1_00_a funeval_grp_fu_13790_ACMP_mul_25 vhdl    
+lib controller_v1_00_a funeval_grp_fu_14268_ACMP_mul_26 vhdl    
+lib controller_v1_00_a funeval_grp_fu_14438_ACMP_mul_27 vhdl    
+lib controller_v1_00_a funeval_grp_fu_15002_ACMP_mul_28 vhdl    
+lib controller_v1_00_a funeval_grp_fu_15178_ACMP_mul_29 vhdl    
+lib controller_v1_00_a funeval_grp_fu_15623_ACMP_mul_30 vhdl    
+lib controller_v1_00_a funeval_grp_fu_15794_ACMP_mul_31 vhdl    
+lib controller_v1_00_a funeval_grp_fu_16062_ACMP_mul_32 vhdl  
+lib controller_v1_00_a funeval_grp_fu_16406_ACMP_mul_33 vhdl 
+lib controller_v1_00_a funeval_grp_fu_16694_ACMP_mul_34 vhdl 
+lib controller_v1_00_a funeval_grp_fu_17012_ACMP_mul_35 vhdl
+lib controller_v1_00_a funeval_grp_fu_17314_ACMP_mul_36 vhdl
+lib controller_v1_00_a funeval_grp_fu_17620_ACMP_mul_37 vhdl
+lib controller_v1_00_a funeval_grp_fu_17922_ACMP_mul_38 vhdl
+lib controller_v1_00_a funeval_grp_fu_18240_ACMP_mul_39 vhdl
+lib controller_v1_00_a funeval_grp_fu_18541_ACMP_mul_40 vhdl
+lib controller_v1_00_a funeval_grp_fu_18849_ACMP_mul_41 vhdl
+lib controller_v1_00_a funeval_grp_fu_19161_ACMP_mul_42 vhdl
+lib controller_v1_00_a funeval_grp_fu_20608_ACMP_mul_43 vhdl
+lib controller_v1_00_a funeval_grp_fu_21079_ACMP_mul_44 vhdl
+lib controller_v1_00_a funeval_grp_fu_7240_ACMP_mul_1 vhdl  
+lib controller_v1_00_a funeval_grp_fu_7673_ACMP_mul_2 vhdl  
+lib controller_v1_00_a funeval_grp_fu_8073_ACMP_mul_3 vhdl  
+lib controller_v1_00_a funeval_grp_fu_8100_ACMP_mul_4 vhdl  
+lib controller_v1_00_a funeval_grp_fu_8127_ACMP_mul_5 vhdl  
+lib controller_v1_00_a funeval_grp_fu_8238_ACMP_mul_6 vhdl  
+lib controller_v1_00_a funeval_grp_fu_8404_ACMP_mul_7 vhdl  
+lib controller_v1_00_a funeval_grp_fu_8642_ACMP_mul_8 vhdl  
+lib controller_v1_00_a funeval_grp_fu_8956_ACMP_mul_9 vhdl  
+lib controller_v1_00_a funeval_grp_fu_9254_ACMP_mul_10 vhdl 
+lib controller_v1_00_a funeval_grp_fu_9541_ACMP_mul_11 vhdl 
+lib controller_v1_00_a funeval_grp_fu_9844_ACMP_mul_12 vhdl 
+lib controller_v1_00_a funeval_premat_xr_V vhdl             
+lib controller_v1_00_a funeval_theta_V vhdl                 
+lib controller_v1_00_a funeval_theta_new_V vhdl             
+lib controller_v1_00_a funeval_x_in_int_V vhdl              
+lib controller_v1_00_a funeval_y_int_V vhdl                 
+lib controller_v1_00_a funeval_y_new_V vhdl                 
+                  

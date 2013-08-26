@@ -1,0 +1,104 @@
+
+Release 14.4 - Simulation Model Generator Xilinx EDK 14.4 Build EDK_P.49d
+ (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: simgen -p xc6vlx240tff1156-1 -lang vhdl -intstyle default -lp
+C:/Users/asuardi/Desktop/CRANE_Vivado_HLS/ -msg __xps/ise/xmsgprops.lst -s mgm
+-tb -X C:/Xilinx/14.4/Modelsim -m behavioral bfm_system.mhs 
+
+MHS file              : \...\controller_v1_00_a\devl\bfmsim\bfm_system.mhs
+Language (-lang)      : VHDL 
+Flow (-flow)      : ISE 
+Simulation Model (-m) : Behavioral
+Simulator (-s)        : Mentor Graphics ModelSim (MGM)
+Part (-p) [ family ]  : xc6vlx240tff1156-1 [ virtex6 ]
+External memory simulation (-external_mem_sim) : FALSE 
+
+Output directory (-od):
+C:\Users\asuardi\Desktop\CRANE_Vivado_HLS\EDK\pcores\controller_v1_00_a\devl\bfm
+sim\
+
+Edklib (-E) : C:\Xilinx\14.4\Modelsim\edk\
+Xlib (-X)   : C:\Xilinx\14.4\Modelsim\
+
+Library Path (-lp): C:\Users\asuardi\Desktop\CRANE_Vivado_HLS\
+
+
+Simulation Model Generator started ...
+
+Reading MHS file ...
+lp : C:\Users\asuardi\Desktop\CRANE_Vivado_HLS\
+
+Reading MPD definitions ...
+
+Overriding IP level properties ...
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi4lite_bus - tcl is
+   overriding PARAMETER C_BASEFAMILY value to virtex6 -
+   C:\Xilinx\14.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 81 
+
+Computing clock values...
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+
+Checking platform address map ...
+
+Checking platform configuration ...
+IPNAME: axi_interconnect, INSTANCE: axi4lite_bus - 1 master(s) : 1 slave(s) 
+
+Checking port drivers...
+
+Performing Clock DRCs...
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+
+INFO: Setting C_RANGE_CHECK = OFF for axi_interconnect axi4lite_bus; no DECERR
+checking will be performed.
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi4lite_bus - tcl is
+   overriding PARAMETER C_RANGE_CHECK value to 0 -
+   C:\Xilinx\14.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 149 
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+
+Running UPDATE Tcl procedures for OPTION SIMGEN_SYSLEVEL_UPDATE_PROC...
+
+Elaborating instances ...
+
+Generating simulation files ...
+
+Writing HDL for elaborated instances ...
+
+Inserting wrapper level ...
+
+Constructing platform-level signal connectivity ...
+WARNING:EDK:504 - (GLOBAL) - atleast 1 toplevel output/input needs to be
+   defined!
+
+Writing HDL ...
+
+Generating simulator compile script ...
+
+Using the following precompiled EDK libraries:
+  C:\Xilinx\14.4\Modelsim\edk\cdn_axi4_lite_master_bfm_wrap_v2_01_a\
+  C:\Xilinx\14.4\Modelsim\edk\axi_interconnect_v1_06_a\
+  C:\Xilinx\14.4\Modelsim\edk\proc_common_v3_00_a\
+  C:\Xilinx\14.4\Modelsim\edk\axi_lite_ipif_v1_01_a\
+
+
+Generating simulator helper scripts ...
+Simulation Model Generator done!
+

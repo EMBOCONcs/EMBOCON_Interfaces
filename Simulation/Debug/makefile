@@ -28,7 +28,7 @@ all: libSimulation.so
 libSimulation.so: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C Linker'
-	gcc /usr/lib/libsundials_cvode.a /usr/lib/libsundials_nvecserial.a -shared -o"libSimulation.so" $(OBJS) $(USER_OBJS) $(LIBS)
+	gcc -fPIC -shared -o"libSimulation.so" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 

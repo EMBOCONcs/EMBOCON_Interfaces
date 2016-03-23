@@ -38,13 +38,6 @@
 								<option id="gnu.c.compiler.option.misc.other.606806059" name="Other flags" superClass="gnu.c.compiler.option.misc.other" value="-c -fmessage-length=0" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1004892133" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 							</tool>
-							<tool command="gcc /usr/lib/libsundials_cvode.a /usr/lib/libsundials_nvecserial.a" commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG}${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" errorParsers="org.eclipse.cdt.core.GLDErrorParser" id="cdt.managedbuild.tool.gnu.c.linker.so.debug.1453234475" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.so.debug">
-								<option defaultValue="true" id="gnu.c.link.so.debug.option.shared.361558697" name="Shared (-shared)" superClass="gnu.c.link.so.debug.option.shared" valueType="boolean"/>
-								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.865913271" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
-									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
-									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
-								</inputType>
-							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.so.debug.325666020" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.so.debug">
 								<option defaultValue="true" id="gnu.cpp.link.so.debug.option.shared.366210338" name="Shared (-shared)" superClass="gnu.cpp.link.so.debug.option.shared" valueType="boolean"/>
 							</tool>
